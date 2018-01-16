@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CE44C788-4EA3-2DCF-95F8-2C07C11E73BC}</ProjectGuid>
+    <ProjectGuid>{51DB4290-2180-ACA5-C393-D57BE3D1ECFD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -51,13 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Extras\NavMeshComponents\Scripts\NavMeshLink.cs" />
-     <Compile Include="Assets\Extras\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-     <Compile Include="Assets\Extras\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-     <Compile Include="Assets\Extras\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-     <Compile Include="Assets\Scripts\AreaDraw.cs" />
-     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
-     <Compile Include="Assets\Scripts\EnemyMotor.cs" />
+     <Compile Include="Assets\Extras\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
+     <Compile Include="Assets\Extras\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
+     <Compile Include="Assets\Extras\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
+     <Compile Include="Assets\Extras\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
+     <Compile Include="Assets\Extras\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -145,6 +143,10 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/jvandyke/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{CE44C788-4EA3-2DCF-95F8-2C07C11E73BC}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
