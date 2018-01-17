@@ -2,8 +2,28 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyMotor.cs">
     <Files>
-      <File FileName="Assets\Scripts\EnemyMotor.cs" Line="22" Column="44" />
+      <File FileName="Assets\Scripts\EnemyMotor.cs" Line="53" Column="3" />
+      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="7" Column="43" />
+      <File FileName="Assets\Scripts\PlayerStats.cs" Line="22" Column="28" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2D-Idler" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="EnemyMotor.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="2D-Idler" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
