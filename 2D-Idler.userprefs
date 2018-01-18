@@ -1,29 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyMotor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawner.cs">
     <Files>
-      <File FileName="Assets\Scripts\EnemyMotor.cs" Line="53" Column="3" />
-      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="7" Column="43" />
-      <File FileName="Assets\Scripts\PlayerStats.cs" Line="22" Column="28" />
+      <File FileName="Assets\Scripts\EnemyMotor.cs" Line="33" Column="24" />
+      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="40" Column="26" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="2D-Idler" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="EnemyMotor.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="2D-Idler" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

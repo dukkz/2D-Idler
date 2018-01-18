@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMotor : MonoBehaviour {
 
-	public Transform player;
+	public GameObject player;
 	public float distanceToTarget, speed = .05f, climbingSpeed = 1f;
 
 	Transform closestLadder = null;
@@ -14,19 +14,24 @@ public class EnemyMotor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		distanceToTarget = (player.position - transform.position).magnitude;
+		distanceToTarget = (player.transform.position - transform.position).magnitude;
 
 		if (tag == "Ghost") {
 			if (distanceToTarget > 3) {
-				transform.position = Vector3.MoveTowards (transform.position, player.position, speed);
+				transform.position = Vector3.MoveTowards (transform.position, player.transform.position, speed);
 			} else {
 				transform.position = transform.position;
 			}
 		} else {
+			if (transform.position.y == player.transform.position.y) {
+				needToFindLadder = false;
+				goToLadder = false;
+			}
 			if (transform.position.y != player.transform.position.y && needToFindLadder) {
 				closestLadder = FindNearestLadder ();
 				needToFindLadder = false;
@@ -37,14 +42,14 @@ public class EnemyMotor : MonoBehaviour {
 					goToLadder = false;
 				}
 			} else {
-				if (transform.position.y == player.position.y) {
+				if (transform.position.y == player.transform.position.y) {
 					onPlayerY = true;
 				}
-				if(transform.position.y != player.position.y) {
-					transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, player.position.y, transform.position.z), climbingSpeed); 
+				if(transform.position.y != player.transform.position.y) {
+					transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, player.transform.position.y, transform.position.z), climbingSpeed); 
 				}
 				if (distanceToTarget > 3 && onPlayerY) {
-					transform.position = Vector3.MoveTowards (transform.position, player.position, speed);
+					transform.position = Vector3.MoveTowards (transform.position, player.transform.position, speed);
 				} else {
 					transform.position = transform.position;
 				}
